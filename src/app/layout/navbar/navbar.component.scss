@@ -12,6 +12,12 @@ nav {
 
   background: transparent;
   z-index: 1000;
+  background: transparent;
+}
+
+nav.scrolled {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
 }
 
 .logo {
