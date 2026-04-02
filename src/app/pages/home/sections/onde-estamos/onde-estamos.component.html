@@ -1,1 +1,50 @@
-<p>onde-estamos works!</p>
+<section id="onde-estamos" class="onde-estamos">
+  <div class="container">
+
+    <h2>Onde estamos</h2>
+
+    <div class="content">
+
+      <!-- MENU CIDADES -->
+      <div class="cidades">
+
+        @for (cidade of cidades; track $index) {
+          <div 
+            class="cidade-item"
+            [class.active]="cidadeSelecionada.nome === cidade.nome"
+            (click)="selecionarCidade(cidade)"
+          >
+            <span class="dot"></span>
+            {{ cidade.nome }}
+          </div>
+        }
+      </div>
+
+      <!-- MAPA + INFO -->
+      <div class="detalhe">
+
+        <div class="header">
+          <h3>{{ cidadeSelecionada.nome }}</h3>
+        </div>
+
+        <div class="map">
+          <iframe
+            [src]="cidadeSelecionada.mapUrl"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="info">
+          <p>{{ cidadeSelecionada.endereco }}</p>
+
+          <button (click)="openRoutes()">
+            Ver no Google Maps
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
