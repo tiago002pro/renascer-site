@@ -1,0 +1,26 @@
+{
+    "title": "Igreja Renascer, uma igreja, uma família!",
+    "introduction": "Uma família que acolhe todas as pessoas, um espaço pra fortalecer famílias na fé, um lugar para adorar e exaltar a Jesus. A Igreja renascer foi plantada em Maringá no ano de 2003 pelos pastores Marcio e Selma Ribeiro. A Renascer sempre se fundamentou nas escrituras sagradas, na oração e no mover do espirito santo, promovendo transformação através do evangelho.",
+    "sobre": [
+        {
+            "label": "Visão",
+            "texto": "Ser uma igreja firmada nas Escrituras Sagradas, relevante para a sociedade e comprometida com a transformação de vidas por meio do Evangelho. Buscamos ver pessoas sendo restauradas, famílias fortalecidas e uma comunidade que reflita os valores do Reino de Deus em todas as áreas da vida."  
+        },
+        {
+            "label": "Missão",
+            "texto": "Ser uma igreja firmada nas Escrituras Sagradas, relevante para a sociedade e comprometida com a transformação de vidas por meio do Evangelho. Buscamos ver pessoas sendo restauradas, famílias fortalecidas e uma comunidade que reflita os valores do Reino de Deus em todas as áreas da vida."  
+        },
+        {
+            "label": "Valores",
+            "texto": "Cremos na Bíblia como fundamento da nossa fé e prática, guiando nossas atitudes e decisões. Buscamos viver em santidade, refletindo o caráter de Cristo no dia a dia. Valorizamos a família como base essencial da sociedade e acolhemos todas as pessoas com amor e graça. Vivemos com ética, integridade e responsabilidade, administrando com sabedoria tudo o que Deus nos confiou para a edificação da igreja e expansão do Reino."  
+        }
+    ],
+    "leadership": {
+        "paragraphs":[
+            "Bem-vindo à Igreja Renascer. É muito bom ter você aqui conosco!",
+            "Aqui na Renascer nós prezamos por um relacionamento com Deus Pai, Filho e Espírito. Assim, nossa prioridade é passar tempo aprendendo a amar melhor a Deus e ao nosso próximo.",
+            "Entendemos que isso é feito através dos momentos de louvor, adoração, estudo da Palavra e também aprendendo como desenvolver nossos dons. Desejamos que a Igreja Renascer seja um lugar onde todos que entrarem sejam instigados a um andar de intimidade com Deus!"
+        ],
+        "image": "https://firebasestorage.googleapis.com/v0/b/renascer-app.appspot.com/o/Site%2Fap%20marcio.jpg?alt=media&token=b5baec0c-9ebf-4eb8-89df-739d3a6bff22"
+    }
+}

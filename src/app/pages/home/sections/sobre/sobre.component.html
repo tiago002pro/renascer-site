@@ -3,43 +3,24 @@
 
     <div class="sobre-content">
 
-      <!-- TEXTO -->
       <div class="sobre-text">
-        <h2 class="reveal reveal-up" appReveal>Sobre nós</h2>
+        <h2 class="reveal reveal-up" appReveal>{{ data.title }}</h2>
 
-        <p class="reveal reveal-up" appReveal>
-          Somos apaixonados por tecnologia e por transformar ideias em soluções reais.
-          Nosso objetivo é ajudar empresas a crescer com organização, eficiência e inovação.
-        </p>
-
-        <p class="reveal reveal-up" appReveal>
-          Trabalhamos com foco em qualidade, simplicidade e resultado. Acreditamos que
-          tecnologia não precisa ser complicada — ela precisa resolver problemas.
-        </p>
+        <p class="reveal reveal-up" appReveal>{{ data.introduction }}</p>
 
         <div class="valores">
 
-          <div class="valor reveal reveal-up" appReveal>
-            <h3>🚀 Inovação</h3>
-            <p>Buscamos sempre as melhores soluções com tecnologia moderna.</p>
-          </div>
-
-          <div class="valor reveal reveal-up" appReveal>
-            <h3>🤝 Compromisso</h3>
-            <p>Nos dedicamos ao sucesso de cada cliente e projeto.</p>
-          </div>
-
-          <div class="valor reveal reveal-up" appReveal>
-            <h3>🎯 Resultado</h3>
-            <p>Foco total em gerar valor real e impacto no negócio.</p>
-          </div>
-
+          @for (item of data.sobre; track $index) {
+            <div class="valor reveal reveal-up" appReveal>
+              <h3>{{ item.label }}</h3>
+              <p>{{ item.texto }}</p>
+            </div>
+          }
         </div>
       </div>
 
-      <!-- IMAGEM -->
       <div class="sobre-image reveal reveal-right" appReveal>
-        <img src="assets/sobre.png" alt="Sobre nós">
+        <img src="assets/images/sobre.jpg" alt="Sobre nós">
       </div>
 
     </div>
