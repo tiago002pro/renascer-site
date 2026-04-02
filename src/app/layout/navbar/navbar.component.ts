@@ -13,7 +13,7 @@ import { AsyncPipe } from '@angular/common';
 export class NavbarComponent {
 
   menu = [
-    { label: 'Home', fragment: 'hero' },
+    { label: 'Home', fragment: 'home' },
     { label: 'Quem Somos', fragment: 'sobre' },
     { label: 'Liderança', fragment: 'lideranca' },
     { label: 'Onde Estamos', fragment: 'onde-estamos' },

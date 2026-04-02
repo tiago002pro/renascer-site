@@ -10,4 +10,7 @@ import { RevealDirective } from '../../../../core/directive/reveal.directive';
 })
 export class HeroComponent {
 
+  scrollTo(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

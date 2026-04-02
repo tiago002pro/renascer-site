@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding: 60px 24px;
+  padding: 1vw 20vh;
 }
 
 .footer-col h4 {
@@ -39,17 +39,6 @@
   display: block;
   font-size: 14px;
   color: #9ca3af;
-}
-
-/* BOTÃO */
-button {
-  margin-top: 12px;
-  padding: 10px 16px;
-  background: #4f46e5;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
 }
 
 /* SOCIAL */
