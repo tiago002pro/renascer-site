@@ -5,7 +5,11 @@
 
   <ul class="menu">
     @for (item of menu; track $index) {
-      <a routerLink="/" fragment="{{item.fragment}}">
+      <a
+        routerLink="/"
+        fragment="{{item.fragment}}"
+        [class.active]="(activeSection$ | async) === item.fragment"
+      >
         {{ item.label }}
       </a>
     }
