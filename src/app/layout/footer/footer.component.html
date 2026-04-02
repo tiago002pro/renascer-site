@@ -1,1 +1,63 @@
-<p>footer works!</p>
+<footer class="footer">
+
+  <div class="container footer-content">
+
+    <!-- LOGO + SOBRE -->
+    <div class="footer-col">
+      <div class="logo">
+        <img src="assets/images/logo_branca.png" alt="Logo">
+        <span>Igreja <strong>Renascer</strong></span>
+      </div>
+
+      <p class="descricao">
+        Um lugar para crescer, conectar e viver o propósito de Deus.
+      </p>
+    </div>
+
+    <!-- CIDADES -->
+    <div class="footer-col">
+      <h4>Unidades</h4>
+
+      <div class="unidade">
+        @for (cidade of cidades; track $index) {
+          <strong>{{ cidade.nome }}</strong>
+          <span>{{ cidade.endereco }}</span>
+        }
+      </div>
+    </div>
+
+    <!-- CONTATO -->
+    <div class="footer-col">
+      <h4>Contato</h4>
+
+      <!-- <p>Email: contato@igreja.com</p> -->
+      <p>Telefone: (44) 3225-6271</p>
+
+      <!-- <button (click)="scrollTo('contato')">
+        Fale conosco
+      </button> -->
+    </div>
+
+    <!-- REDES SOCIAIS -->
+    <div class="footer-col">
+      <h4>Redes sociais</h4>
+
+      <div class="social-media">
+        @for (media of socialMedia; track $index) {
+          <a (click)="openLink(media.link)">
+            <i class="{{media.icon}}"></i>
+          </a>
+        }
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© {{ currentYear }} Igreja Renascer • Todos os direitos reservados</p>
+    </div>
+  </div>
+
+</footer>
