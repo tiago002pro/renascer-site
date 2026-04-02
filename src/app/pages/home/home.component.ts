@@ -3,11 +3,12 @@ import { SobreComponent } from "./sections/sobre/sobre.component";
 import { OndeEstamosComponent } from "./sections/onde-estamos/onde-estamos.component";
 import { HeroComponent } from './hero/hero.component';
 import { ScrollSpyService } from '../../core/service/scroll-spy.service';
+import { RevealDirective } from '../../core/directive/reveal.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, SobreComponent, OndeEstamosComponent],
+  imports: [HeroComponent, SobreComponent, OndeEstamosComponent, RevealDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
