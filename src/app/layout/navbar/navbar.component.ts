@@ -15,6 +15,7 @@ export class NavbarComponent {
   menu = [
     { label: 'Home', fragment: 'hero' },
     { label: 'Quem Somos', fragment: 'sobre' },
+    { label: 'Liderança', fragment: 'lideranca' },
     { label: 'Onde Estamos', fragment: 'onde-estamos' },
   ]
 

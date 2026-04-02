@@ -1,7 +1,6 @@
 section {
   min-height: 100vh;
   padding: 80px 24px;
-  // display: flex;
   align-items: center;
 }
 
@@ -11,10 +10,17 @@ section {
 }
 
 #sobre {
+  background: white;
+  min-height: 100vh;
+}
+
+#lideranca {
+  background: white;
   min-height: 100vh;
 }
 
 #onde-estamos {
+  background: var(--accent);
   min-height: 80vh;
 }
 

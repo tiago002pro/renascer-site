@@ -4,11 +4,12 @@ import { OndeEstamosComponent } from "./sections/onde-estamos/onde-estamos.compo
 import { HeroComponent } from './sections/hero/hero.component';
 import { ScrollSpyService } from '../../core/service/scroll-spy.service';
 import { RevealDirective } from '../../core/directive/reveal.directive';
+import { LiderancaComponent } from "./sections/lideranca/lideranca.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, SobreComponent, OndeEstamosComponent, RevealDirective],
+  imports: [HeroComponent, SobreComponent, OndeEstamosComponent, RevealDirective, LiderancaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
