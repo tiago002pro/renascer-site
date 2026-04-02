@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { SobreComponent } from "./sections/sobre/sobre.component";
 import { OndeEstamosComponent } from "./sections/onde-estamos/onde-estamos.component";
-import { HeroComponent } from './hero/hero.component';
+import { HeroComponent } from './sections/hero/hero.component';
 import { ScrollSpyService } from '../../core/service/scroll-spy.service';
 import { RevealDirective } from '../../core/directive/reveal.directive';
 

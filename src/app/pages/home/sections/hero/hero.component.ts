@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RevealDirective } from '../../../core/directive/reveal.directive';
+import { RevealDirective } from '../../../../core/directive/reveal.directive';
 
 @Component({
   selector: 'app-hero',
