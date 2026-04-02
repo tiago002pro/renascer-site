@@ -1,0 +1,13 @@
+<nav>
+  <div class="logo">
+    Igreja Renascer
+  </div>
+
+  <ul class="menu">
+    @for (item of menu; track $index) {
+      <a routerLink="/" fragment="{{item.fragment}}">
+        {{ item.label }}
+      </a>
+    }
+  </ul>
+</nav>
