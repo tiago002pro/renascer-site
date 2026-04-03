@@ -1,3 +1,5 @@
+@use 'assets/styles/styles.scss';
+
 *,
 *::before,
 *::after {
@@ -53,3 +55,15 @@ html {
 .reveal:nth-child(2) { transition-delay: 0.2s; }
 .reveal:nth-child(3) { transition-delay: 0.3s; }
 .reveal:nth-child(4) { transition-delay: 0.4s; }
+
+
+/* Mobile first (padrão) */
+@media (min-width: 576px) { /* celulares grandes */ }
+
+@media (min-width: 768px) { /* tablets */ }
+
+@media (min-width: 992px) { /* notebooks */ }
+
+@media (min-width: 1200px) { /* desktops */ }
+
+@media (min-width: 1400px) { /* telas grandes */ }
