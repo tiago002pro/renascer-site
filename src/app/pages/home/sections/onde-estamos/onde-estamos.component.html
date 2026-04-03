@@ -1,13 +1,10 @@
 <section id="onde-estamos" class="onde-estamos">
   <div class="container">
-
-    <h2>Onde estamos</h2>
-
+    <div class="title">
+      <span class="reveal reveal-up" appReveal>Onde estamos</span>
+    </div>
     <div class="content">
-
-      <!-- MENU CIDADES -->
       <div class="cidades">
-
         @for (cidade of cidades; track $index) {
           <div 
             class="cidade-item"
@@ -20,13 +17,7 @@
         }
       </div>
 
-      <!-- MAPA + INFO -->
       <div class="detalhe">
-
-        <div class="header">
-          <h3>{{ cidadeSelecionada.nome }}</h3>
-        </div>
-
         <div class="map">
           <iframe
             [src]="cidadeSelecionada.mapUrl"

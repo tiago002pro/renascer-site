@@ -1,63 +1,55 @@
 <footer class="footer">
+  <div class="container">
+    <div class="inner">
+      <div class="footer-col">
+        <div class="logo">
+          <img src="assets/images/logo_branca.png" alt="Logo">
+          <span>Igreja <strong>Renascer</strong></span>
+        </div>
 
-  <div class="container footer-content">
-
-    <!-- LOGO + SOBRE -->
-    <div class="footer-col">
-      <div class="logo">
-        <img src="assets/images/logo_branca.png" alt="Logo">
-        <span>Igreja <strong>Renascer</strong></span>
+        <div class="descricao">
+          <span>
+            Um lugar para crescer, conectar e viver o propósito de Deus.
+          </span>
+        </div>
       </div>
 
-      <p class="descricao">
-        Um lugar para crescer, conectar e viver o propósito de Deus.
-      </p>
-    </div>
+      <div class="footer-col">
+        <div class="title">
+          <span>Igrejas</span>
+        </div>
 
-    <!-- CIDADES -->
-    <div class="footer-col">
-      <h4>Unidades</h4>
-
-      <div class="unidade">
         @for (cidade of cidades; track $index) {
-          <strong>{{ cidade.nome }}</strong>
-          <span>{{ cidade.endereco }}</span>
+          <div class="col-inner">
+            <span>{{ cidade.nome }}</span>
+            <span class="endereco">{{ cidade.endereco }}</span>
+          </div>
         }
       </div>
-    </div>
 
-    <!-- CONTATO -->
-    <div class="footer-col">
-      <h4>Contato</h4>
+      <div class="footer-col">
+        <div class="title">
+          <span>Contato</span>
+        </div>
 
-      <!-- <p>Email: contato@igreja.com</p> -->
-      <p>Telefone: (44) 3225-6271</p>
+        <div class="col-inner">
+          <span>Telefone: (44) 3225-6271</span>
+        </div>
 
-      <!-- <button (click)="scrollTo('contato')">
-        Fale conosco
-      </button> -->
-    </div>
-
-    <!-- REDES SOCIAIS -->
-    <div class="footer-col">
-      <h4>Redes sociais</h4>
-
-      <div class="social-media">
-        @for (media of socialMedia; track $index) {
-          <a (click)="openLink(media.link)">
-            <i class="{{media.icon}}"></i>
-          </a>
-        }
+        <div class="social-media">
+          @for (media of socialMedia; track $index) {
+            <a (click)="openLink(media.link)">
+              <i class="{{media.icon}}"></i>
+            </a>
+          }
+        </div>
       </div>
+
+      
     </div>
-
-  </div>
-
-  <!-- BOTTOM -->
-  <div class="footer-bottom">
-    <div class="container">
+    
+    <div class="footer-bottom">
       <p>© {{ currentYear }} Igreja Renascer • Todos os direitos reservados</p>
     </div>
   </div>
-
 </footer>

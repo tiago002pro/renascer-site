@@ -1,20 +1,22 @@
 <nav [class.scrolled]="isScrolled">
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="Logo">
-    <p>Igreja Renascer</p>
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo">
+      <p>Igreja Renascer</p>
+    </div>
+  
+    <ul class="menu">
+      @for (item of menu; track $index) {
+        <li>
+          <a
+            routerLink="/"
+            fragment="{{item.fragment}}"
+            [class.active]="(activeSection$ | async) === item.fragment"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
   </div>
-
-  <ul class="menu">
-    @for (item of menu; track $index) {
-      <li>
-        <a
-          routerLink="/"
-          fragment="{{item.fragment}}"
-          [class.active]="(activeSection$ | async) === item.fragment"
-        >
-          {{ item.label }}
-        </a>
-      </li>
-    }
-  </ul>
 </nav>

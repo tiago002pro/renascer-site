@@ -3,18 +3,26 @@
   color: #fff;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  padding: 1vw 20vh;
+.inner {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-col h4 {
-  margin-bottom: 16px;
+.footer-col  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-/* LOGO */
+.footer-col .title {
+  text-transform: uppercase;
+}
+
+.footer-col .col-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -30,18 +38,11 @@
   color: #9ca3af;
 }
 
-/* UNIDADES */
-.unidade {
-  margin-bottom: 12px;
-}
-
-.unidade span {
-  display: block;
+.endereco {
   font-size: 14px;
   color: #9ca3af;
 }
 
-/* SOCIAL */
 .social-media {
   display: flex;
   gap: 12px;
@@ -57,7 +58,6 @@
   transform: translateY(-2px);
 }
 
-/* BOTTOM */
 .footer-bottom {
   border-top: 1px solid #1f2937;
   padding: 16px 0;

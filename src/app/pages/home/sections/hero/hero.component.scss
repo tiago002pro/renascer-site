@@ -7,19 +7,16 @@
   justify-content: center;
 }
 
-/* overlay escuro pra dar contraste */
 .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* conteúdo */
 .hero-content {
   position: relative;
   text-align: center;
   color: white;
-  max-width: 700px;
   padding: 0 24px;
 }
 

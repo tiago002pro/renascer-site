@@ -1,29 +1,23 @@
 <section id="sobre" class="sobre">
   <div class="container">
-
     <div class="sobre-content">
-
       <div class="sobre-text">
-        <h2 class="reveal reveal-up" appReveal>{{ data.title }}</h2>
-
+        <span class="title reveal reveal-up" appReveal>{{ data.title }}</span>
         <p class="reveal reveal-up" appReveal>{{ data.introduction }}</p>
 
         <div class="valores">
-
           @for (item of data.sobre; track $index) {
             <div class="valor reveal reveal-up" appReveal>
-              <h3>{{ item.label }}</h3>
+              <span class="sub-title">{{ item.label }}</span>
               <p>{{ item.texto }}</p>
             </div>
           }
         </div>
       </div>
-
+      
       <div class="sobre-image reveal reveal-right" appReveal>
         <img src="assets/images/sobre.jpg" alt="Sobre nós">
       </div>
-
     </div>
-
   </div>
 </section>

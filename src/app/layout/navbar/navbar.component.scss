@@ -1,16 +1,6 @@
 nav {
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1vw 20vh;
-
-  background: transparent;
   z-index: 1000;
   background: transparent;
 }
@@ -20,10 +10,17 @@ nav.scrolled {
   backdrop-filter: blur(10px);
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px !important;
+}
+
 .logo {
   font-size: 20px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 
@@ -33,13 +30,13 @@ nav.scrolled {
 }
 
 .logo img {
-  width: 50px;
+  height: 40px;
 }
 
 .menu {
   display: flex;
   list-style: none;
-  gap: 10vw;
+  gap: 40px;
 }
 
 .menu li a {
