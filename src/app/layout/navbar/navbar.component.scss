@@ -20,6 +20,11 @@ nav.scrolled {
   padding: 0 16px !important;
 }
 
+.right {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -30,7 +35,15 @@ nav.scrolled {
   height: 40px;
 }
 
-.menu {
+.logo p {
+  color: white;
+}
+
+.logo p.scrolled {
+  color: #666;
+}
+
+.menu ul {
   width: 100%;
   display: flex;
   list-style: none;
@@ -38,12 +51,12 @@ nav.scrolled {
   z-index: 999;
 }
 
-.menu li a {
+.menu ul li a {
   text-decoration: none;
   color: #666;
 }
 
-.menu li a.active {
+.menu ul li a.active {
   color: var(--primary-dark);
   font-weight: bold;
 }
@@ -58,12 +71,17 @@ nav.scrolled {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: white;
   transition: 0.3s;
+}
+
+.menu-toggle span.scrolled {
+  background: #333;
 }
 
 .menu-toggle span.open:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
+  background: #333;
 }
 
 .menu-toggle span.open:nth-child(2) {
@@ -72,6 +90,7 @@ nav.scrolled {
 
 .menu-toggle span.open:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+  background: #333;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +100,13 @@ nav.scrolled {
   }
 
   .menu {
+    position: fixed;
+    top: var(--navbar);
+    left: 0;
+    width: 100%;
+  }
+
+  .menu ul {
     position: fixed;
     top: 48px;
     right: 0;
@@ -95,26 +121,26 @@ nav.scrolled {
     transition: 0.3s;
   }
 
-  .menu.open {
+  .menu ul.open {
     transform: translateY(0);
   }
 
-  .menu li {
+  .menu ul li {
     width: 100%;
     padding: 8px 0;
     text-align: center;
     align-items: center;
   }
 
-  .menu li:first-child {
-    border-top: 1px solid #66666665;
+  .menu ul li:first-child {
+    border-top: 1px solid #66666623;
   }
 
-  .menu li:not(:last-child) {
-    border-bottom: 1px solid #66666665;
+  .menu ul li:not(:last-child) {
+    border-bottom: 1px solid #66666623;
   }
 
-  .menu li a:active {
+  .menu ul li a:active {
     background: #f9fafb;
   }
 }

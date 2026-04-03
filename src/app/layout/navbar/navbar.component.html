@@ -1,31 +1,35 @@
 <nav [class.scrolled]="isScrolled">
   <div class="container">
-
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="Logo">
-      <p>Igreja Renascer</p>
+    <div class="left">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo">
+        <p [class.scrolled]="isScrolled">Igreja Renascer</p>
+      </div>
     </div>
 
-    <div class="menu-toggle" (click)="toggleMenu()">
-      <span [class.open]="menuOpen"></span>
-      <span [class.open]="menuOpen"></span>
-      <span [class.open]="menuOpen"></span>
+    <div class="right">
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span [class.open] ="menuOpen" [class.scrolled]="isScrolled"></span>
+        <span [class.open] ="menuOpen" [class.scrolled]="isScrolled"></span>
+        <span [class.open] ="menuOpen" [class.scrolled]="isScrolled"></span>
+      </div>
     </div>
 
-    <ul class="menu" [class.open]="menuOpen">
-      @for (item of menu; track $index) {
-        <li>
-          <a
-            routerLink="/"
-            fragment="{{item.fragment}}"
-            (click)="closeMenu()"
-            [class.active]="(activeSection$ | async) === item.fragment"
-          >
-            {{ item.label }}
-          </a>
-        </li>
-      }
-    </ul>
-
+    <div class="menu">
+      <ul [class.open]="menuOpen">
+        @for (item of menu; track $index) {
+          <li>
+            <a
+              routerLink="/"
+              fragment="{{item.fragment}}"
+              (click)="closeMenu()"
+              [class.active]="(activeSection$ | async) === item.fragment"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
   </div>
 </nav>
