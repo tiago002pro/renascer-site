@@ -18,28 +18,22 @@
   gap: 40px;
 }
 
-.cidades {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .cidade-item {
+  padding: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #555;
   transition: 0.2s;
 }
 
 .cidade-item:hover {
-  color: #000;
+  background: #f3f4f6;
 }
 
 .cidade-item.active {
+  background: #fff7ed;
+  color: var(--primary);
   font-weight: bold;
-  color: #000;
+  border-left: 3px solid var(--primary);
 }
 
 .dot {
