@@ -1,8 +1,10 @@
 nav {
   position: fixed;
   width: 100%;
+  height: var(--navbar);
   z-index: 1000;
   background: transparent;
+  transition: 0.3s;
 }
 
 nav.scrolled {
@@ -11,6 +13,7 @@ nav.scrolled {
 }
 
 .container {
+  height: var(--navbar);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,15 +21,9 @@ nav.scrolled {
 }
 
 .logo {
-  font-size: 20px;
   display: flex;
-  gap: 5px;
   align-items: center;
-}
-
-.logo p {
-  text-transform: capitalize;
-  color: #666;
+  gap: 5px;
 }
 
 .logo img {
@@ -34,18 +31,90 @@ nav.scrolled {
 }
 
 .menu {
+  width: 100%;
   display: flex;
   list-style: none;
   gap: 40px;
+  z-index: 999;
 }
 
 .menu li a {
   text-decoration: none;
   color: #666;
-  transition: 0.3s;
 }
 
 .menu li a.active {
   color: var(--primary-dark);
   font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: 0.3s;
+}
+
+.menu-toggle span.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle span.open:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle span.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 48px;
+    right: 0;
+    width: 100%;
+
+    background: rgba(255,255,255,0.9);
+    gap: 0px;
+    padding: 20px;
+
+    flex-direction: column;
+    transform: translateY(-200%);
+    transition: 0.3s;
+  }
+
+  .menu.open {
+    transform: translateY(0);
+  }
+
+  .menu li {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .menu li:first-child {
+    border-top: 1px solid #66666665;
+  }
+
+  .menu li:not(:last-child) {
+    border-bottom: 1px solid #66666665;
+  }
+
+  .menu li a:active {
+    background: #f9fafb;
+  }
 }

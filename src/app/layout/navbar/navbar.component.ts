@@ -21,6 +21,7 @@ export class NavbarComponent {
 
   isScrolled = false;
   private lastState = false;
+  menuOpen = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -30,11 +31,27 @@ export class NavbarComponent {
       this.isScrolled = current;
       this.lastState = current;
     }
+
+    if (this.menuOpen) this.activeScrollNav();
   }
 
   activeSection$;
 
   constructor(private scrollSpy: ScrollSpyService) {
     this.activeSection$ = this.scrollSpy.activeSection$;
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    this.activeScrollNav();
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
+
+  activeScrollNav() {
+    this.isScrolled = this.menuOpen;
+    this.lastState = this.menuOpen;
   }
 }

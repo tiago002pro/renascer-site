@@ -13,24 +13,14 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-content {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 0 24px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.hero-content p {
-  margin-top: 16px;
-  font-size: 18px;
-}
-
-.hero-content button {
+.container button {
   margin-top: 24px;
   padding: 12px 20px;
   background: var(--primary);
@@ -39,12 +29,34 @@
   color: white;
   cursor: pointer;
   transition: 0.2s;
+  position: relative;
 }
 
-.hero-content button:hover {
+.container button:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
 }
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content  .title {
+  font-size: 36px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.hero-content  .sub-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
 
 @media (max-width: 768px) {
   .hero-content h1 {

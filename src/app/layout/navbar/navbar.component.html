@@ -1,16 +1,24 @@
 <nav [class.scrolled]="isScrolled">
   <div class="container">
+
     <div class="logo">
       <img src="assets/images/logo.png" alt="Logo">
       <p>Igreja Renascer</p>
     </div>
-  
-    <ul class="menu">
+
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+    </div>
+
+    <ul class="menu" [class.open]="menuOpen">
       @for (item of menu; track $index) {
         <li>
           <a
             routerLink="/"
             fragment="{{item.fragment}}"
+            (click)="closeMenu()"
             [class.active]="(activeSection$ | async) === item.fragment"
           >
             {{ item.label }}
@@ -18,5 +26,6 @@
         </li>
       }
     </ul>
+
   </div>
 </nav>

@@ -1,20 +1,20 @@
 <section id="home" class="hero" [style.backgroundImage]="'url(assets/images/hero-bg.jpg)'">
-
   <div class="overlay"></div>
 
   <div class="container">
     <div class="hero-content">
-      <h1 class="reveal reveal-up" appReveal>
+      <span class="title reveal reveal-up" appReveal>
         Bem-vindo à Igreja Renascer
-      </h1>
+      </span>
   
-      <p class="reveal reveal-up" appReveal>
+      <span class="sub-title reveal reveal-up" appReveal>
         Um lugar para viver propósito, fé e transformação
-      </p>
+      </span>
   
-      <button class="reveal reveal-up" appReveal (click)="scrollTo('sobre')">
-        Conheça mais
-      </button>
     </div>
+    
+    <button class="reveal reveal-up" appReveal (click)="scrollTo('sobre')">
+      Conheça mais
+    </button>
   </div>
 </section>

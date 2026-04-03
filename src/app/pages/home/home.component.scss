@@ -1,6 +1,5 @@
 section {
   min-height: 100vh;
-  // padding: 80px 24px;
   align-items: center;
 }
 
@@ -27,6 +26,5 @@ section {
 @media (max-width: 768px) {
   section {
     min-height: auto;
-    padding: 60px 16px;
   }
 }
