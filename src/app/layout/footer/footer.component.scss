@@ -65,3 +65,32 @@
   font-size: 14px;
   color: #9ca3af;
 }
+
+@media (max-width: 768px) {
+
+  .inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .col-inner {
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .descricao {
+    max-width: 300px;
+  }
+}
