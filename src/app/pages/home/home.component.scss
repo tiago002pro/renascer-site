@@ -1,5 +1,5 @@
 section {
-  min-height: 100vh;
+  // scroll-margin-top: var(--navbar);
   align-items: center;
 }
 
@@ -16,7 +16,7 @@ section {
 }
 
 #onde-estamos {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 @media (max-width: 768px) {

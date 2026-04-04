@@ -1,7 +1,7 @@
 <section id="onde-estamos" class="onde-estamos">
   <div class="container">
     <div class="title">
-      <span class="reveal reveal-up" appReveal>Onde estamos</span>
+      <h2 class="reveal reveal-up" appReveal>Onde estamos</h2>
     </div>
     <div class="content">
       <div class="cidades">
@@ -11,8 +11,7 @@
             [class.active]="cidadeSelecionada.nome === cidade.nome"
             (click)="selecionarCidade(cidade)"
           >
-            <span class="dot"></span>
-            {{ cidade.nome }}
+            <h3>{{ cidade.nome }}</h3>
           </div>
         }
       </div>

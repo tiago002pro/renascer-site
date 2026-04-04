@@ -2,13 +2,13 @@
   <div class="container">
     <div class="sobre-content">
       <div class="sobre-text">
-        <span class="title reveal reveal-up" appReveal>{{ data.title }}</span>
+        <h2 class="reveal reveal-up" appReveal>{{ data.title }}</h2>
         <p class="reveal reveal-up" appReveal>{{ data.introduction }}</p>
 
         <div class="valores">
           @for (item of data.sobre; track $index) {
             <div class="valor reveal reveal-up" appReveal>
-              <span class="sub-title">{{ item.label }}</span>
+              <h3>{{ item.label }}</h3>
               <p>{{ item.texto }}</p>
             </div>
           }
